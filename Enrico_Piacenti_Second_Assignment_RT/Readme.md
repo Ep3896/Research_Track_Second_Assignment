@@ -62,9 +62,9 @@ The program will open five windows:
 
 
 
-Action client Flowchart [node (a)]:
+Action client Flowchart :
 ----------------------------
-<img src="Flowchart_Second_Assignment.png" alt="Flowchart" width="600"/>
+<img src="https://github.com/Ep3896/Second-assignment/blob/main/Enrico_Piacenti_Second_Assignment_RT/image/Flowchart_Second_Assignment.png" />
 
 
 
