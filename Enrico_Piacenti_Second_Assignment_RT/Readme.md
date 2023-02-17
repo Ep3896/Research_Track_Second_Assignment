@@ -9,7 +9,7 @@ Second Assignment
 ===================
 The task of this assignment was to implement three new nodes in the robot simulation:
 
-* A node (a) that implements an action client, allowing the user to set a target (x, y) or to cancel it.
+* A node that implements an action client, allowing the user to set a target (x, y) or to cancel it.
 * A service node that prints the number of objectives attained and abandoned upon request;
 * A node that uses a custom message to subscribe to the robot's position and velocity while also printing the robot's average speed and distance from the goal.
 
