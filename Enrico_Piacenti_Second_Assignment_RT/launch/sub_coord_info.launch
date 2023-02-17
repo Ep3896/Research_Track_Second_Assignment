@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node pkg="enrico_second_assignment" type="sub_coord.py" name="sub_coord" output="screen" />
+</launch>

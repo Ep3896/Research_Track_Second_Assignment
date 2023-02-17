@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+    <param name="print_per_second" value= "2" />
+
+    <node pkg="enrico_second_assignment" type="action_client.py" name="action_client" output="screen" />
+    <node pkg="enrico_second_assignment" type="custom_msg.py" name="custom_msg" output="screen" />
+    <node pkg="enrico_second_assignment" type="srv.py" name="srv" output="screen"/>   
+</launch>
