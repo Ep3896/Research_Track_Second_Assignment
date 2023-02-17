@@ -1,4 +1,4 @@
-ROS SIMULATION
+ROS SIMULATION - RESEARCH TRACK 1
 ===================
 
 ### Professor. [Carmine Recchiuto](https://github.com/CarmineD8)
