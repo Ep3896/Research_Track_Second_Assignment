@@ -64,7 +64,7 @@ The program will open five windows:
 
 Action client Flowchart [node (a)]:
 ----------------------------
-![Tux, the Linux mascot](/image/Flowchart_Second_Assignment.png)
+<img src="Flowchart_Second_Assignment.png" alt="Flowchart" width="600"/>
 
 
 
