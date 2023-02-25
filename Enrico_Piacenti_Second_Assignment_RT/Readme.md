@@ -30,7 +30,7 @@ Run the following command from the shell:\
 ```bash
 $ git clone https://github.com/Ep3896/Enrico_Piacenti_Second_Assignment_RT-.git
 ```
-Just for be prudent , it is recommended to run the following commands if a buil in the catkin workspace was done beforehand:
+Just for be prudent , it is recommended to run the following commands if a build in the catkin workspace was done beforehand:
 
 ```bash
 $ sudo rm -rf devel/
