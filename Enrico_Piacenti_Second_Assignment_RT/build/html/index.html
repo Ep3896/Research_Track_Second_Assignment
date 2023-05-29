@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Enrico_Piacenti_RT_second_assignment’s documentation! &mdash; Enrico_Piacenti_RT_second_assignment 25/02/2023 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Enrico_Piacenti_RT_second_assignment
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to Enrico_Piacenti_RT_second_assignment’s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#module-scripts.action_client">User Interface Module</a></li>
+<li><a class="reference internal" href="#module-scripts.custom_msg">Modality one Module</a></li>
+<li><a class="reference internal" href="#module-scripts.srv">Modality two Module</a></li>
+<li><a class="reference internal" href="#module-scripts.sub_coord">Modality three Module</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Enrico_Piacenti_RT_second_assignment</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to Enrico_Piacenti_RT_second_assignment’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="welcome-to-enrico-piacenti-rt-second-assignment-s-documentation">
+<h1>Welcome to Enrico_Piacenti_RT_second_assignment’s documentation!<a class="headerlink" href="#welcome-to-enrico-piacenti-rt-second-assignment-s-documentation" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="module-scripts.action_client">
+<span id="user-interface-module"></span><h1>User Interface Module<a class="headerlink" href="#module-scripts.action_client" title="Permalink to this headline"></a></h1>
+<p>Python code that implements the user interface to select the desired action on the robot and the action_client , allowing the user to set a target (x,y).</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Messages:</dt><dd><p>/PoseStamped
+/actionlib.msg
+/assignment_2_2022.msg</p>
+</dd>
+<dt>Service:</dt><dd><p>/std_srvs</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.action_client.Controller">
+<span class="sig-prename descclassname"><span class="pre">scripts.action_client.</span></span><span class="sig-name descname"><span class="pre">Controller</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/action_client.html#Controller"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.action_client.Controller" title="Permalink to this definition"></a></dt>
+<dd><p>This function asks the user about his/her choice and therefore runs the corresponding function.
+If the user inputs a wrong choice it is printed out for the user and the while loop starts over again.
+The two choices are:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><em>1) autonomously reach a x,y coordinate provided by the user</em></div>
+<div class="line"><em>2) Stop the moving robot and cancel its given prompt</em></div>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.action_client.remove_instruction">
+<span class="sig-prename descclassname"><span class="pre">scripts.action_client.</span></span><span class="sig-name descname"><span class="pre">remove_instruction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/action_client.html#remove_instruction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.action_client.remove_instruction" title="Permalink to this definition"></a></dt>
+<dd><p>This function request the server to remove the instuction given by the user about reaching a spcific target.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.action_client.selected_target">
+<span class="sig-prename descclassname"><span class="pre">scripts.action_client.</span></span><span class="sig-name descname"><span class="pre">selected_target</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/action_client.html#selected_target"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.action_client.selected_target" title="Permalink to this definition"></a></dt>
+<dd><div class="line-block">
+<div class="line">This function does the following:</div>
+<div class="line"><em>1) Read the request provided by the user.</em></div>
+<div class="line"><em>2) Create a goal using the user data.</em></div>
+<div class="line"><em>3) Waits the server.</em></div>
+<div class="line"><em>4) Create the goal.</em></div>
+<div class="line"><em>5) Set the goal.</em></div>
+<div class="line"><em>6) Start the user interface back again.</em></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.action_client.wrong_input">
+<span class="sig-prename descclassname"><span class="pre">scripts.action_client.</span></span><span class="sig-name descname"><span class="pre">wrong_input</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/action_client.html#wrong_input"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.action_client.wrong_input" title="Permalink to this definition"></a></dt>
+<dd><p>This function occurs when the user select a wrong input at the start of the command.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-scripts.custom_msg">
+<span id="modality-one-module"></span><h1>Modality one Module<a class="headerlink" href="#module-scripts.custom_msg" title="Permalink to this headline"></a></h1>
+<p>this node has the aim of publishing a desired type of ROS message</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Messages:</dt><dd><p>/Odometry
+/odom_custom_msg</p>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="module-scripts.srv">
+<span id="modality-two-module"></span><h1>Modality two Module<a class="headerlink" href="#module-scripts.srv" title="Permalink to this headline"></a></h1>
+<p>This function prints the number of goals reached and cancelled</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Messages:</dt><dd><p>/assignment_2_2022.msg</p>
+</dd>
+<dt>Service:</dt><dd><p>/Empty
+/EmptyResponse</p>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="module-scripts.sub_coord">
+<span id="modality-three-module"></span><h1>Modality three Module<a class="headerlink" href="#module-scripts.sub_coord" title="Permalink to this headline"></a></h1>
+<dl>
+<dt>This node subscribes to the robot?s position and velocity (using the custom message) and prints the</dt><dd><blockquote>
+<div><p>distance of the robot from the target and the robot?s average speed</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Messages:</dt><dd><p>/odom_custom_msg</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Enrico Piacenti.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
