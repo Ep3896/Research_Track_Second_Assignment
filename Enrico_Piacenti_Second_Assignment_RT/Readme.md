@@ -1,6 +1,8 @@
 ROS SIMULATION - RESEARCH TRACK 1
 ===================
 
+Documentation avaible at: https://ep3896.github.io/
+
 ### Professor. [Carmine Recchiuto](https://github.com/CarmineD8)
 
 We will learn how to use ROS custom messages, services, and actions in this assignment. We'll also utilize Rviz and Gazebo's graphical user interfaces to observe the simulation of the robot. The assignment 2 2022 template was used as a starting point for the creation of the new package.
